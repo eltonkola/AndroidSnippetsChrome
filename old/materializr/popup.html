@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Snippet Search</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+      <style type="text/css">
+      html { width:600px; height:580px; }
+      body { height: 580px; }
+    </style>
+</head>
+<body>
+
+<form id="search-form">
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center green-text">Android Snippets</h1>
+      <div class="row center">
+        <input type="text" id='search-me' hint="Android Snippet Search" data-activates='suggestions'/>
+
+        <div id="suggestions_container">
+          <!--
+              <ul   id="suggestions" class="dropdown-content">
+              -->
+          <ul   id="suggestions" class="dropdown-content active" style="width: 500px; position: absolute; top: 210px; left: 50px; opacity: 1; display: block;">
+          </ul>
+        </div>
+      </div>
+      <div class="row center">
+        <a  id="click-me" class="btn-large waves-effect waves-light green" >Search</a>
+      </div>
+      <br><br>
+
+
+    </div>
+  </div>
+</form>
+
+  <!--  Scripts-->
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+     <script src="popup.js"></script>
+  </body>
+</html>
